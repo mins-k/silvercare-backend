@@ -1,16 +1,19 @@
 {
   "name": "silvercare-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "SilverCare backend",
+  "main": "src/index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "nodemon src/index.js",
-    "dev": "node src/index.js"
+    "start": "node src/index.js", 
+    "dev": "nodemon src/index.js"  
+  },
+  "engines": {
+    "node": ">=18"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.858.0",
     "@aws-sdk/client-polly": "^3.858.0",
