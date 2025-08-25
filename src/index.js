@@ -23,7 +23,7 @@ const corsOptions = {
       const allow =
         origin === 'http://localhost:5173' ||
         origin === 'http://localhost:3000' ||
-        origin === 'https://2025hackathon-five.vercel.app' ||
+        origin === 'https://2025hackathon-five-seven.vercel.app' ||
         (u.protocol === 'https:' && /\.ngrok-free\.app$/.test(u.hostname));
       return cb(allow ? null : new Error(`Not allowed by CORS: ${origin}`), allow);
     } catch {
