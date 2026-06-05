@@ -12,3 +12,14 @@ Node.js, Express, AWS DynamoDB, OpenAI API, AWS Polly, AWS Transcribe
 - 음성 입력 STT
 - 음성 출력 TTS
 - 상담형 챗봇
+
+## Architecture
+
+Client
+ ↓
+Express API
+ ↓
+OpenAI
+AWS DynamoDB
+AWS Polly
+AWS Transcribe
