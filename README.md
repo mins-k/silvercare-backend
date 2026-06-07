@@ -20,9 +20,9 @@
 ## Architecture
 
 Client
- ↓
+ →
 Express API
- ↓
+ →
 OpenAI
 AWS DynamoDB
 AWS Polly
