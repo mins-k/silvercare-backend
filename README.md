@@ -23,3 +23,10 @@
 - 데이터: DynamoDB(프로필/채팅/신청), JSON 파일(정책 카탈로그 – 로컬 데모용)
 - 파일 저장: S3(옵션) + public/ 정적 서빙
 - 보안: Admin API는 헤더 x-admin-token(환경변수 ADMIN_TOKEN)
+
+## DEMO SCRIPT
+1. Postman POST /api/profile(hongildong)
+2. GET /api/match?userId=hongildong → 상위 정책 확인
+3. POST /api/chat(“받을 수 있는 정책?” / tts:true) → mp3 링크 재생
+4. POST /api/voice-turn(음성 파일 업로드) → STT→답변 음성 (준비→제출→확인)
+5. Admin POST/PATCH/DELETE /api/admin/policies(헤더 x-admin-token) → 정책 변경 즉시 반영
