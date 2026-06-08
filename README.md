@@ -18,12 +18,8 @@
 - 상담형 챗봇
 
 ## Architecture
-
-Client
- →
-Express API
- →
-OpenAI
-AWS DynamoDB
-AWS Polly
-AWS Transcribe
+- API 서버: Node.js(Express)
+- AI: OpenAI(Chat) → 답변/스몰톡 + 태깅- 음성: AWS Transcribe(STT, 업로드형) / AWS Polly(TTS, S3 또는 로컬 폴백)
+- 데이터: DynamoDB(프로필/채팅/신청), JSON 파일(정책 카탈로그 – 로컬 데모용)
+- 파일 저장: S3(옵션) + public/ 정적 서빙
+- 보안: Admin API는 헤더 x-admin-token(환경변수 ADMIN_TOKEN)
